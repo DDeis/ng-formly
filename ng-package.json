@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "lib": {
+    "entryFile": "src/index.ts",
+    "externals": {
+      "rxjs/observable/fromPromise": "Rx.Observable",
+      "rxjs/operator/debounceTime": "Rx.Observable.prototype",
+      "rxjs/operator/map": "Rx.Observable.prototype",
+      "rxjs/operator/toPromise": "Rx.Observable.prototype",
+      "rxjs/symbol/observable": "Rx.Symbol"
+    }
+  }
+}
